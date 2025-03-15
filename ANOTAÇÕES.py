@@ -34,3 +34,23 @@ print(f"È alfabetico?{n.isalpha()}") #.isalpha     LETRAS
 print(f"È Alfanumerico?{n.isalnum()}") #.isalnum  NUMERO&LETRA
 print(f"Está em letras MAIÚSCULAS?{n.isupper()}") #.isupper
 print(f"Está em letras minúsculas?{n.islower()}") #.islower
+print(f"Está capitalizada?{n.istitle()}") #.istitle Power
+
+#-------------------------------------------------------------
+
+nome = input("Qual é seu nome? ")
+print(f"Prazer em te conhecer {nome:^20}!") # :^20 Centralização da vareavel
+
+n2 = int(input("Digite outro numero. "))
+s = n1 + n2  # SOMA
+m = n1 * n2  # MULTIPLICAÇÃO
+d = n1 / n2  # DIVISÃO
+di = n1 // n2  # DIVISÃO INTEIRA
+e = n1 ** n2 # EXPOENENCIAÇÃO
+print(f"O resultado da some é {s:-> 22}")
+print(f"O resultado da multiplicação é {m:-> 13}")
+print(f"O resultado da divisão é {d:-> 20}")
+print(f"O resultado da divisão interia é {di:-> 10}")
+print(f"O resultado da exponenciação é {e:-> 15}")
+
+#-------------------------------------------------------------
