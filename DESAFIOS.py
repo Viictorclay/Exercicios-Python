@@ -112,12 +112,37 @@
 #------------------------------8------------------------------
 #             LOJA AQUI TUDO TEM DE 5% DESCONTO !!
 
-print("-----------------------------------------------------")
-valor = float(input("Qual é o valor do produto? "))
-vdescontado = valor -  (valor / 5)
-sodesconto = vdescontado - valor
-print("-----------------------------------------------------")
-print(f"VALOR SEM DESCONTO: R$ {valor}")
-print(f"VALOR COM DESCONTO: R$ {vdescontado:.2f}")
-print(f"DESCONTO DE: R$ {sodesconto}")
-print("-----------------------------------------------------")
+#print("-----------------------------------------------------")
+#valor = float(input("Qual é o valor do produto? "))
+#vdescontado = valor -  (valor * 5/100)
+#sodesconto = vdescontado - valor
+#print("-----------------------------------------------------")
+#print(f"VALOR SEM DESCONTO: R$ {valor}")
+#print(f"VALOR COM DESCONTO: R$ {vdescontado:.2f}")
+#print(f"DESCONTO DE: R$ {sodesconto}")
+#print("-----------------------------------------------------")
+
+#------------------------------9------------------------------
+#                      REAJUSTE SALARIAL
+
+#salario = float(input("Quanto o fucionariol ganha? "))
+#salarioCR = salario + (salario * 8.40/100)
+#reajuste = salarioCR -  salario
+#print(f"O salario do funcionario ficou R${salarioCR}")
+#print(f"O reajuste foi de R${reajuste}")
+
+#------------------------------10------------------------------
+#                    CELSIUS PRA FAHRENHEIT
+
+#c = float(input("Quantos graus está fazendo? "))
+#f = (c * 9/5) + 32
+#print(f"CELSIUS: {c}°C")
+#print(f"FAHRENHEIT: {f}°F")
+
+#------------------------------11------------------------------
+#                      ALUGUEL DE CARRO
+
+dias = int(input("Quantos dias? "))
+kms = float(input("Quantos kms rodou? "))
+pagar = (dias * 60) + (kms * 0.15)
+print(f"Falor final: {pagar:.2f}")
