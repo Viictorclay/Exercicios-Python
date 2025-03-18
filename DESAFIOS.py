@@ -142,7 +142,36 @@
 #------------------------------11------------------------------
 #                      ALUGUEL DE CARRO
 
-dias = int(input("Quantos dias? "))
-kms = float(input("Quantos kms rodou? "))
-pagar = (dias * 60) + (kms * 0.15)
-print(f"Falor final: {pagar:.2f}")
+#dias = int(input("Quantos dias? "))
+#kms = float(input("Quantos kms rodou? "))
+#pagar = (dias * 60) + (kms * 0.15)
+#print(f"Falor final: {pagar:.2f}")
+
+#------------------------------12------------------------------
+#
+
+
+#import math
+#num = float(input("Digite um numero: "))
+#arredondarCIMA = math.ceil(num)
+#arredondarBAIXO = math.floor(num)
+#partINTERIA = math.trunc(num)
+#potencia = math.pow(num)
+#raizQ = math.sqrt(num)
+
+#print(f"ARREDONDANDO PARA CIMA: {arredondarCIMA}")
+#print(f"ARREDONDANDO PARA BAIXO: {arredondarBAIXO}")
+#print(f"PARTE INTEIRA: {partINTERIA}")
+#print(f"POTENCIA: {potencia}")
+#print(f"RAIZ QUADRADA: {raizQ:.2f}")
+
+#------------------------------13------------------------------
+#
+
+import random # SORTEIO
+
+names = input(f"Quais são os alunos ? \n").split(",") # ESCOLHE ENTRE
+names = [name.strip() for name in names] # REMOVE O ESPAÇO 
+escolhido = random.choice(names)
+print(" ")
+print(f"O aluno(a) escolhido foi: {escolhido}")

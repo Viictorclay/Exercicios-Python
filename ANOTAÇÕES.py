@@ -54,3 +54,12 @@ print(f"O resultado da divisão interia é {di:-> 10}")
 print(f"O resultado da exponenciação é {e:-> 15}")
 
 #-------------------------------------------------------------
+
+import math   # BIBLIOTECA MATEMATICA
+
+num = float(input("Digite um numero: "))
+arredondarCIMA = math.ceil(num)  # ARREDONDADER PRA CIMA
+arredondarBAIXO = math.floor(num)  # ARREDONDADER PARA BAIXO
+partINTERIA = math.trunc(num)  # SÓ A PARTE ANTES DA VIRGULA
+potencia = math.pow(num)  # POTENCIA 
+raizQ = math.sqrt(num)  # RAIZ QUADRADA
