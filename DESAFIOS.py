@@ -168,10 +168,76 @@
 #------------------------------13------------------------------
 #
 
-import random # SORTEIO
+#import random # SORTEIO
 
-names = input(f"Quais são os alunos ? \n").split(",") # ESCOLHE ENTRE
-names = [name.strip() for name in names] # REMOVE O ESPAÇO 
-escolhido = random.choice(names)
-print(" ")
-print(f"O aluno(a) escolhido foi: {escolhido}")
+#names = input(f"Quais são os alunos ? \n").split(",") # ESCOLHE ENTRE
+#names = [name.strip() for name in names] # REMOVE O ESPAÇO 
+#escolhido = random.choice(names)
+#print(" ")
+#print(f"O aluno(a) escolhido foi: {escolhido}")
+
+#------------------------------14------------------------------
+#
+
+name = input("Qual é seu nome? ")
+maiusculos = name.upper()
+minusculos = name.lower()
+namenospace = name.replace(" ","")
+qletras = namenospace.__len__()
+primeironame = name.split()
+print("----------------------------------------------------------")
+print(f"NOME EM MAIÚSCULO: {maiusculos}")  #name + .upper()
+print(f"NOME EM MINÚSCULO: {minusculos}")  #name + .lowor()
+print(f"NOME SEM ESPAÇO: {namenospace}")  #name + .replace(" ","")
+print(f"QUANTAS LETRAS TEM: {qletras}")   #VAREAVEL DO .replace(" ","") + .__len__
+print(f"PRIMEIRO NOME: {primeironame[0]}")  #name + .split() // colocar o numero [0] pois, é o primoro nome.
+
+#------------------------------15------------------------------
+#                     LER NUMERO DE 0 A 9999
+
+while True:
+    numero = input("DIGITE UM NUMERO DE 0 A 9999: ").strip()
+    print("")
+
+    if len(numero) == 4:
+        print(f"unidade: {numero[3]}")
+        print(f"dezena: {numero[2]}")
+        print(f"centena: {numero[1]}")
+        print(f"milhar: {numero[0]}")
+        break
+    elif len(numero) == 3:
+        print(f"unidade: {numero[2]}")
+        print(f"dezena: {numero[1]}")
+        print(f"centena: {numero[0]}")
+        break
+    elif len(numero) == 2:
+        print(f"unidade: {numero[1]}")
+        print(f"dezena: {numero[0]}")
+        break
+    elif len(numero) == 1:
+        print(f"unidade: {numero[0]}")
+        break
+    else:
+        print("N/0")
+
+#------------------------------16------------------------------
+#                SUA CIDADE COMEÇA COM SANTO(A)?
+
+cidade = input("Qual é o nome da sua cidade? ")
+print(cidade.lower().find("santa"))
+
+#------------------------------17------------------------------
+#                    VOCÊ TEM SILVA NO NOME ?
+
+name = input("QUAL É SEU NOME ? ")
+print("SILVA" in name.upper())
+
+#------------------------------17------------------------------
+#                    PRIMEIRO E ULTIMO NOME
+
+nome_completo = input("NOME COMPALTO: ").strip()
+name = nome_completo.title().split()
+if len(name) >= 2:
+    print(f"PRIMEIRO NOME: {name[0]}")
+    print(f"SEGUNDO NOME: {name[-1]}")
+    
