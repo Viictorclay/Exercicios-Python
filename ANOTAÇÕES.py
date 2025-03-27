@@ -78,3 +78,17 @@ print(f"NOME EM MINÚSCULO: {minusculos}")  #name + .lowor()
 print(f"NOME SEM ESPAÇO: {namenospace}")  #name + .replace(" ","")
 print(f"QUANTAS LETRAS TEM: {qletras}")   #VAREAVEL DO .replace(" ","") + .__len__
 print(f"PRIMEIRO NOME: {primeironame[0]}")  #name + .split() // colocar o numero [0] pois, é o primoro nome.
+
+#--------------------------------------------------------------------
+
+import random
+numero_PC = random.randint(1, 100) #SORTEIO DE NUMEROS
+
+#--------------------------------------------------------------------
+
+number = int(input("Digite um numero: "))
+
+if number % 2 == 0: # (% = MODULO) = é o resto da divisão
+    print("O numero é PAR!")
+else:
+    print(f"numero é ÍMPAR!")

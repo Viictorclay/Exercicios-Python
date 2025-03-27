@@ -1,0 +1,14 @@
+#       O DOBRO, TRIPLO E A RAIZ QUADRADA DE UM NUMERO
+
+
+n = int(input("Digite um numero: "))
+d = n * 2
+t = n * 3
+rq = n ** (1/2)
+print(f"O dobro de {n} é {d}.")
+print(f"O triplo de {n} é {t}.") 
+print(f"A raiz quadrada de {n} é {rq}.")
+print(f"NUMERO: {n}")
+print(f"DOBRO: {d}")
+print(f"TRIPLO: {t}")
+print(f"RAIZ QUADRADA: {rq}")
