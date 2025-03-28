@@ -92,3 +92,30 @@ if number % 2 == 0: # (% = MODULO) = é o resto da divisão
     print("O numero é PAR!")
 else:
     print(f"numero é ÍMPAR!")
+
+#--------------------------------------------------------------------
+#                           CORES NO TERMINAL
+
+#                \033[0;33;44m
+#________________________________________________
+#     STYLER     |     TEXT      |      BACK     |
+# 0 = None       | 30 = WHITE    | 40 = WHITE    |
+# 1 = Bold       | 31 = RED      | 41 = RED      |
+# 4 = Underline  | 32 = GREEN    | 42 = GREEN    |
+# 7 = negative   | 33 = YELLOW   | 43 = YELLOW   |
+#                | 34 = BLUE     | 44 = BLUE     |
+#                | 35 = PURPLE   | 45 = PURPLE   |
+#                | 36 = CYAN     | 46 = CYAN     |
+#                | 37 = GRAY     | 47 = GRAY     |
+#________________|_______________|_______________|
+
+# 30      black         preto         40
+# 31      red           vermelho      41
+# 32      green         verde         42
+# 33      yellow        amarelo       43
+# 34      blue          azul          44
+# 35      Magenta       Magenta       45
+# 36      cyan          ciano         46
+# 37      grey          cinza         47
+# 97      white         branco       107
+

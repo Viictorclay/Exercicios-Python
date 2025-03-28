@@ -1,5 +1,6 @@
 #                TIPO PRIMITIVO & SUAS INFORs
 
+n = (input("Seu nome: "))
 
 print(type(n))
 print(f"Só tem espaços?{n.isspace()}") #.isspace   SÓ ESPAÇO
