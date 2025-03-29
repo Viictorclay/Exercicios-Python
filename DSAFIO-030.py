@@ -8,7 +8,7 @@ obesidade = (0 if imc <18.5 else
              1 if imc < 29.9 else
              2 if imc < 39.9 else
              3)
-with
+
 if imc <18.5:
     print(f"IMC: {imc:.2f}")
     print("Você está abaixo do peso ideal.")
