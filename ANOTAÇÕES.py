@@ -119,3 +119,18 @@ else:
 # 37      grey          cinza         47
 # 97      white         branco       107
 
+
+menor = 0
+maior = 0
+for c in range(1, 4):
+    peso = float(input(f"Peso da pessoa {c} : "))
+    if c == 1:
+        maior = peso #O PRIMEIRO PESO SENDO MAIOR OU MENOR RECEBE
+        menor = peso #O PRIMEIRO PESO SENDO MAIOR OU MENOR RECEBE
+    else:
+        if peso > maior: #AGORA, SE O PROXIMO PESO FOR MAIOR
+            maior = peso #OS NUMEROS SÃO TROCADOS E O NOVO NUEMRO É POSTO O LUGAR.
+        if peso < menor: #SE O PROXIMO NUMERO FOR MENOR QUE FOI DIGITADO
+            menor = peso #A VAREAVEL RECEBE O NOVO MEOR NUMERO  
+print(f"MAIOR PESO: {maior}Kg")
+print(f"MENOR PESO: {menor}Kg")
