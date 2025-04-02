@@ -134,3 +134,8 @@ for c in range(1, 4):
             menor = peso #A VAREAVEL RECEBE O NOVO MEOR NUMERO  
 print(f"MAIOR PESO: {maior}Kg")
 print(f"MENOR PESO: {menor}Kg")
+
+
+max() # maior numero dentre as vareáveis
+min() # menor numero dentre as vareáveis
+exit() # finaliza o programa \ caso esteja dentro de um loop, não precisa usar o BREACK
