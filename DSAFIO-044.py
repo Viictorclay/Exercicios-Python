@@ -8,7 +8,7 @@ print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
 while True:
 
     name = input(" Qual é seu nome ? ")
-    sexo = input(" Homen ou Mulher ? (H/M) ").lower()
+    sexo = input(" Homen ou Mulher ? (H/M) ").strip().lower()
     ano = int(input(" Ano de nasciento: "))
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
     idade = datetime.now().year - ano
@@ -23,10 +23,11 @@ while True:
     elif sexo == "m":
         qPessoas += +1
         qMulheres += +1
-        if idade > 18:
+        
+    if idade > 18:
             pessoasDmair += +1
 
-        elif idade < 20:
+    elif idade < 20:
             mulherMs20 += +1
 
     escolha = input(" Deseja continuar ? ").lower()
