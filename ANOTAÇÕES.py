@@ -169,3 +169,31 @@ valor %= 1 # resto da divisão
 #!!!!!! A SOBRA É PASSADA ATÉ NÃO TER COMO FAZER AS DIVISÕES INTEIRAS OU CHEGAR NO 1 !!!!!!!
 
 #-------------------------------------------------------------------------------------------------
+
+total = 0 # 0 só para nascer a vareavel
+produtoM1000 = 0
+menor_preço = None # "NONE" Significa que ira receber um valor que ainda não sei
+nomeD_menor = "" # "" Denominando que vai vim uma String
+
+print("=-=-=-=-=--=--=--=-=---=-=-=-=-=-=-=-=-=-=-=-=")
+
+while True:
+
+    nomeD_produto = input("Produto: ")
+    preço = float(input("Preço: R$"))
+    
+    total += + preço # colocar ou não o "+" não muda nesse caso
+
+    if preço > 1000:
+        produtoM1000 += +1 # colocar ou não o "+" não muda nesse caso
+
+    escolha = input("Tem mais algum produto ? (sim/não) ").strip().lower()
+
+    if menor_preço is None or preço < menor_preço: # Se menor_preço é NONE or preço < menor_preço
+        menor_preço = preço # menor_preço vai receber (novo) preço
+        nomeD_menor = nomeD_produto # nomeD_menor vai receber o nomeD_produto
+
+        # Ou seja, quando encontrar um produto com preço menor, acontece:
+        
+        # - O novo preço é colocado em "menor_preço"
+        # - O nome do produto é salvo em "nomeD_menor"
