@@ -11,7 +11,7 @@ print("=-=-=-=-=--=--=--=-=---=-=-=-=-=-=-=-=-=-=-=-=")
 while True:
 
     nomeD_produto = input("Produto: ")
-    preço = float(input("Preço: "))
+    preço = float(input("Preço: R$"))
     
     total += + preço
 
