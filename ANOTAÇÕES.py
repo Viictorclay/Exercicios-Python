@@ -119,6 +119,7 @@ else:
 # 37      grey          cinza         47
 # 97      white         branco       107
 
+#------------------------------------------------------------------------
 
 menor = 0
 maior = 0
@@ -135,7 +136,36 @@ for c in range(1, 4):
 print(f"MAIOR PESO: {maior}Kg")
 print(f"MENOR PESO: {menor}Kg")
 
+#-----------------------------------------------------------------------------------------
 
 max() # maior numero dentre as vareáveis
 min() # menor numero dentre as vareáveis
 exit() # finaliza o programa \ caso esteja dentro de um loop, não precisa usar o BREACK
+
+#----------------------------------------------------------------------------------------------
+
+print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+print("                 BANCO Cy                  ")
+print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+valor = int(input(" Que valor você quer sacar ? R$ "))
+print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+
+notas_50 = notas_20 = notas_10 = notas_1 = 0
+
+notas_50 = valor // 50 # divisão inteira/ quantas notas de 50 cabe dentro do numero (valor)
+valor %= 50 # o resto do valor
+
+notas_20 = valor // 20 # divisão inteira/ quantas notas de 20 cabe dentro do numero (valor)
+valor %= 20 # resto da divisão
+
+notas_10 = valor // 10# divisão inteira/ quantas notas de 10 cabe dentro do numero (valor)
+
+valor %= 10 # resto da divisão
+
+notas_1 = valor // 1 # divisão inteira/ quantos notas de 1 cabe dentro do valor
+valor %= 1 # resto da divisão
+
+
+#!!!!!! A SOBRA É PASSADA ATÉ NÃO TER COMO FAZER AS DIVISÕES INTEIRAS OU CHEGAR NO 1 !!!!!!!
+
+#-------------------------------------------------------------------------------------------------
