@@ -197,3 +197,11 @@ while True:
         
         # - O novo preço é colocado em "menor_preço"
         # - O nome do produto é salvo em "nomeD_menor"
+
+#-------------------------------------------------------------------------------------------------
+
+import os # importei a Biblioteca
+
+def clear_system(): # fiz uma caixa para facilitar o uso do comando
+    os.system('cls' if os.name == 'nt' else 'clear') # nt é para novas tecnologias com o Windows cls para as demas.
+clear_system() # comando usado para para limpar.
