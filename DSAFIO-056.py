@@ -8,6 +8,7 @@ soma_idade = 0
 
 print('=-=' *30)
 while True:
+    
     gaveta = {}
     gaveta['nome'] = str(input(' \n Nome: ')).strip()
     gaveta['sexo'] = str(input(' Sexo (M/F): ')).strip().upper()
