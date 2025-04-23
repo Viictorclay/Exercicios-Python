@@ -14,8 +14,9 @@ def sorteio():
         numeros = randint(0,10)
         lst.append(numeros)
         print(f'{numeros} ', end='', flush=True )
-        sleep(0.3)
+        sleep(1)
     print('PRONTO!!')
+
 def soma_de_par():
 
     soma = 0
