@@ -234,3 +234,11 @@ def inicio(valores):
 entrada = input(' digete 1 ou mais números: ')
 valores = [int(n) for n in entrada.split()]
 inicio(valores)
+
+#-------------------------------------------------------------------------------------------------
+
+from datetime import datetime
+
+data_atual = datetime.now()
+print("Data de hoje:", data_atual.strftime("%d/%m/%Y"))
+print(' Hora:', data_atual.strftime("%H:%M:%S"))
