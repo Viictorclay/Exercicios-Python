@@ -18,7 +18,6 @@ def cadastrar_dados_diarios():
     dados['sono'] = int(input(' Quantas horas você dormiu? '))
     dados['atv_física'] = input(' Fez alguma atividade física? ')
     dados['alimentação'] = int(input(' Fez quantas refeições? '))
-    
 def avaliar_habitos():
     if  dados['agua'] < 2:
         print(' 💧 Pouca ingestão de água. Tente beber pelo menos 2L por dia.')
@@ -56,9 +55,9 @@ while True:
     clear_sytem()
     cadastrar_dados_diarios()
     exibir_feedback()
-    pergunta = input(' \nDeseja ver o hitorico 🤔 ? ')
+    pergunta = input(' \n Deseja ver o hitorico 🤔 ? ')
     if pergunta.lower() in ['não', 'nao', 'n']:
-        hst = input(' Mas deseja ver o Historico 🤔 ? ')
+        hst = input(' Mas deseja Continuar 🤔 ? ')
         if hst.lower() in ['não', 'nao', 'n']:
             print(' Ok. Até a proxima. 😊')
             break
@@ -77,4 +76,3 @@ while True:
                 break
         else:
             print()
-
